@@ -1,0 +1,15 @@
+doctype 5
+html(ng-app=module)
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  body
+    block body
+
+    block scripts
+      script(src='/components/jquery/jquery.js')
+      script(src='/components/bootstrap/bootstrap/js/bootstrap.min.js')
+      script(src='/components/AngularJS/angular.js')
+      script(src='/javascripts/app.js');
+      script(src='/javascripts/controllers.js');

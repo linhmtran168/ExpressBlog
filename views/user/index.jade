@@ -1,0 +1,19 @@
+extends ../layout
+
+block body
+  div.navbar.navbar-static-top
+    div.navbar-inner
+      div.container
+        a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        
+        a.brand(href='/user') ExpressBlog
+
+        div.nav-collapse.collapse
+          ul.nav
+            li: a(href='/user/dashboard') Dashboard
+            li: a(href='/user/profile') Profile
+
+  div(ng-view)
